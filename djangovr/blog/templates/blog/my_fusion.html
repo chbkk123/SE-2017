@@ -1,0 +1,33 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-date-picker/paper-date-picker.html">
+<link rel="import" href="../bower_components/medium-editor-element/medium-editor-element.html"> 
+<link rel="import" href="../bower_components/vaadin-date-picker/vaadin-date-picker.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my_fusion">
+  <template>
+    <style include="shared_styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <h1>메모 쓰기</h1>
+      <medium-editor id="noteEditor"></medium-editor>
+      <paper-date-picker></paper-date-picker>
+      <vaadin-date-picker></vaadin-date-picker>
+
+    
+
+  </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my_fusion',
+    });
+  </script>
+</dom-module>

@@ -1,0 +1,46 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared_styles.html">
+
+<dom-module id="my_view3">
+  <template>
+    <style include="shared_styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle">3</div>
+      <h1>View Three</h1>
+      <p>Modus commodo minimum eum te, vero utinam assueverit per eu.</p>
+      <p>Ea duistempor laoreet.Pro saepe pertinax ei, ad pri animal labores suscipiantur.</p>
+      
+      메모장
+      <div class="field">
+        <input type="text" name="filename" id="filename" placeholder="메모 제목">
+      </div>
+      <br>
+      <div class="field">
+        <textarea class="autosize" name="content" id="content" placeholder="메모 내용을 입력하세요."></textarea>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my_view3',
+    });
+  </script>
+</dom-module>

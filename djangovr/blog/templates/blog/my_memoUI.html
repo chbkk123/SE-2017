@@ -1,0 +1,168 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/vaadin-date-picker/vaadin-date-picker.html">
+<link rel="import" href="../bower_components/medium-editor-element/medium-editor-element.html"> 
+<link rel="import" href="shared_styles.html">
+
+<dom-module id="my_memoUI">
+
+    <style include="shared_styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+      *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#page-wrapper {
+  width: 960px;
+  background: #FFF;
+  padding: 1.25rem;
+  margin: 1rem auto;
+  min-height: 300px;
+  border-top: 5px solid #69c773;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+h1 {
+  margin: 0;
+  color:#08F
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+}
+
+p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+a,
+a:visited {
+  color: #08C;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #69c773;
+  cursor: pointer;
+}
+
+a.delete-file,
+a.delete-file:visited {
+  color: #CC0000;
+  margin-left: 0.5rem;
+}
+
+#file-form {
+  width: 650px;
+  float: left;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  min-height: 300px;
+}
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.6rem 1em;
+  background: #08C;
+  border-bottom: 1px solid #08F;
+  color: white;
+  margin: 0 0.25rem;
+  text-align: center;
+}
+
+button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+#files {
+  width: 30%;
+  float: upright;
+}
+
+#files ul {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  height: 330px;
+  overflow-y: auto;
+  list-style: none;
+  background: #F7F7F7;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#files li {
+  padding: 0.5rem 0;
+}
+
+#messages {
+  display: inline-block;
+  font-weight: bold;
+  color: #08C;
+  margin-left: 1rem;
+}
+    </style>
+<html>
+    <div class="card">   
+      <h1>메모장</h1>
+      <div class="field">
+      <vaadin-date-picker></vaadin-date-picker>
+      </div>
+
+      <div class="field">
+        <input type="text" name="filename" id="filename" placeholder="메모 제목">
+      </div>
+
+      <div class="field">
+      <medium-editor name="content" id="content"></medium-editor>
+      </div>
+      <div class="field" id="files">
+        <h2>저장된 메모 목록</h2>
+        <ul id="file-list"></ul>
+        </div>
+
+      
+      
+      <div class="field">
+          <button type="submit">저장</button>
+          <div id="messages"></div>
+        </div>
+    </div>
+</html>    
+      
+      
+      <!-- 알아봐야될 것 : 저장된 메모 목록을 코드 작성 순서를 바꿔서 위로 올리지 않고, 지금 위치에 위치하도록 하는법-->
+    </div>
+
+  <script>
+    Polymer({
+      is: 'my_memoUI',
+    });
+  </script>
+</dom-module>
