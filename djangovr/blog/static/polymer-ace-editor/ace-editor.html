@@ -1,0 +1,20 @@
+
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../polymer-lib-loader/lib-loader.html">
+
+<dom-module id="ace-editor">
+  <template>
+    <style>
+      #editor {
+        height: 400px;
+      }
+    </style>
+
+    <lib-loader id="loaderAce" on-lib-loaded="_initAce"></lib-loader>
+
+    <div class="wrapper">
+      <div id="editor"></div>
+    </div>
+  </template>
+  <script src="ace-editor.js"></script>
+</dom-module>

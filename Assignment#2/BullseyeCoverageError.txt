@@ -1,0 +1,1 @@
+BullseyeCoverage 8.9.14 error 15: Cannot find D:\driver\x56ks_150rf1\win10_4\Options\03_BT\INTEL\8260/test.cov. COVFILE is not set, errno=2. Executable is D:\driver\x56ks_150rf1\win10_4\Options\03_BT\INTEL\8260\Autorun.exe

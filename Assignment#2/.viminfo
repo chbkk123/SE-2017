@@ -1,0 +1,72 @@
+# 이 viminfo 파일은 빔이 만든 것입니다 Vim 8.0.
+# 조심만 한다면 고칠 수도 있습니다!
+
+# Viminfo version
+|1,4
+
+# 이 파일이 저장되었을 때의 'encoding'의 값
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 명령 줄 히스토리 (새것부터 오래된 것 순):
+:q!
+|2,0,1489041350,,"q!"
+:q
+|2,0,1489041347,,"q"
+
+# 찾을 문자열 히스토리 (새것부터 오래된 것 순):
+
+# 표현 히스토리 (새것부터 오래된 것 순):
+
+# 입력 줄 히스토리 (새것부터 오래된 것 순):
+
+# Debug Line 히스토리 (새것부터 오래된 것 순):
+
+# 레지스터:
+""1	LINE	0
+	
+|3,1,1,1,1,0,1489041325,""
+"2	LINE	0
+	# Please enter the commit message for your changes. Lines starting
+|3,0,2,1,1,0,1489041325,"# Please enter the commit message for your changes. Lines starting"
+"3	LINE	0
+	# with '#' will be ignored, and an empty message aborts the commit.
+|3,0,3,1,1,0,1489041324,"# with '#' will be ignored, and an empty message aborts the commit."
+"4	LINE	0
+	# On branch master
+|3,0,4,1,1,0,1489041324,"# On branch master"
+"5	LINE	0
+	#
+|3,0,5,1,1,0,1489041323,"#"
+"6	LINE	0
+	#	new file:   Helloworld.txt
+|3,0,6,1,1,0,1489041323,"#	new file:   Helloworld.txt"
+"7	LINE	0
+	# Changes to be committed:
+|3,0,7,1,1,0,1489041322,"# Changes to be committed:"
+
+# 파일 마크:
+'0  8  0  ~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG
+|4,48,8,0,1489646493,"~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG"
+'1  1  0  ~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG
+|4,49,1,0,1489041350,"~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG"
+'2  1  0  ~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG
+|4,50,1,0,1489041350,"~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG"
+
+# 점프목록 (새것이 먼저):
+-'  8  0  ~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG
+|4,39,8,0,1489646493,"~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG"
+-'  1  0  ~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG
+|4,39,1,0,1489646472,"~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG"
+-'  1  0  ~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG
+|4,39,1,0,1489041350,"~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG"
+
+# 파일내의 마크 히스토리 (새것부터 오래된 순):
+
+> ~/Desktop/Open sourse/For git/.git/COMMIT_EDITMSG
+	*	1489646489	0
+	"	8	0
+	.	1	0
+	+	1	0

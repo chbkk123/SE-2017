@@ -1,0 +1,40 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+
+<html>
+    <head>
+        <title>메모장 앱</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+
+    <body>
+        <div class="page-header">
+            <h1><a href="/">메모장</a></h1>
+        </div>
+        <vaadin-date-picker></vaadin-date-picker>
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+               {% block content %}
+    {% for post in posts %}
+        <div class="post">
+           
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+        </div>
+         <div class="date">
+             <i><b>마지막 수정 시간</b></i><br>
+                {{ post.published_date }}
+            </div>
+            <br>
+    {% endfor %}
+{% endblock content %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
