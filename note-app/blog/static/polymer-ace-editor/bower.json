@@ -1,0 +1,29 @@
+{
+  "name": "polymer-ace-editor",
+  "main": "ace-editor.js",
+  "version": "0.3.0",
+  "authors": [
+    "LasaleFamine <info@godev.space>"
+  ],
+  "description": "Polymer (ES6) wrapper of Ace (C9) editor",
+  "keywords": [
+    "ace",
+    "c9",
+    "editor",
+    "polymer",
+    "es6"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/LasaleFamine/ace-editor#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^1.7.0",
+    "polymer-lib-loader": "^0.2.0"
+  }
+}

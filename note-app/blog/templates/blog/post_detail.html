@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h1>{{ post.title }}</h1><br>
+        <b1>{{ post.text|linebreaksbr }}</b1>
+        {% if post.published_date %}
+            <div class="date">
+                <i><b>마지막 수정 시간</b></i><br>
+                {{ post.published_date }}
+            </div>
+        <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+        {% endif %}
+    </div>
+{% endblock %}
